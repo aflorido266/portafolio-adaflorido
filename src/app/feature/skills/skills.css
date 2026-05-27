@@ -201,7 +201,25 @@
     grid-template-columns:
       repeat(5, 1fr);
 
-    gap: 1.5rem;
+    gap: 2rem;
+  }
+
+  .skill-card{
+
+    padding: 2.5rem 1.5rem;
+
+    border-radius: 28px;
+    min-height: 180px;
+  }
+
+  .skill-card i{
+
+    font-size: 3.5rem;
+  }
+
+  .skill-card span{
+
+    font-size: 1.2rem;
   }
 
 }
