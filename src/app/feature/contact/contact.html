@@ -1,7 +1,4 @@
-<section
-  id="contact"
-  class="contact-section"
->
+<section id="contact" class="contact-section">
 
   <div class="contact-container">
 
@@ -61,30 +58,35 @@
 
     <!-- RIGHT -->
 
-    <form class="contact-form">
+    <form
+  class="contact-form"
+  action="https://formspree.io/f/mvzydgpz"
+  method="POST"
+>
 
-      <input
-        type="text"
-        placeholder="Tu nombre"
-      >
+  <input
+    type="text"
+    name="name"
+    placeholder="Tu nombre"
+  >
 
-      <input
-        type="email"
-        placeholder="Tu email"
-      >
+  <input
+    type="email"
+    name="email"
+    placeholder="Tu email"
+  >
 
-      <textarea
-        rows="6"
-        placeholder="Tu mensaje"
-      ></textarea>
+  <textarea
+    name="message"
+    rows="6"
+    placeholder="Tu mensaje"
+  ></textarea>
 
-      <button type="submit">
+  <button type="submit">
+    Enviar mensaje
+  </button>
 
-        Enviar mensaje
-
-      </button>
-
-    </form>
+</form>
 
   </div>
 
