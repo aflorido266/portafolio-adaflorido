@@ -420,3 +420,12 @@ background-repeat: no-repeat;
   box-shadow:
     0 12px 30px rgba(124,58,237,0.25);
 }
+
+.primary{
+
+  display: inline-block;
+
+  text-decoration: none;
+
+  text-align: center;
+}
