@@ -23,9 +23,7 @@ background:
   
 
 background-size: cover;
-
 background-position: center;
-
 background-repeat: no-repeat;
 }
 
@@ -36,9 +34,7 @@ background-repeat: no-repeat;
 .hero-pattern{
 
   position: absolute;
-
   inset: 0;
-
   background-image:
     radial-gradient(
       rgba(255,255,255,0.35) 1px,
@@ -46,9 +42,7 @@ background-repeat: no-repeat;
     );
 
   background-size: 24px 24px;
-
   opacity: 0.25;
-
   z-index: 0;
 }
 
@@ -59,18 +53,14 @@ background-repeat: no-repeat;
 .hero-left{
 
   position: relative;
-
   z-index: 2;
 }
 
 .hero-left h1{
 
   font-size: 5rem;
-
   line-height: 1.1;
-
   color: #0f172a;
-
   margin: 1.5rem 0;
 }
 
@@ -82,13 +72,9 @@ background-repeat: no-repeat;
 .hero-left p{
 
   max-width: 500px;
-
   font-size: 1.1rem;
-
   line-height: 1.8;
-
   color: #475569;
-
   margin-bottom: 2rem;
 }
 
@@ -99,18 +85,12 @@ background-repeat: no-repeat;
 .badge{
 
   width: fit-content;
-
   padding: 0.6rem 1rem;
-
   border-radius: 999px;
-
   background: white;
-
   box-shadow:
     0 5px 20px rgba(0,0,0,0.08);
-
   color: #7c3aed;
-
   font-weight: bold;
 }
 
@@ -121,16 +101,13 @@ background-repeat: no-repeat;
 .hero-buttons{
 
   display: flex;
-
   gap: 1rem;
 }
 
 .primary{
 
   border: none;
-
   padding: 1rem 2rem;
-
   border-radius: 14px;
 
   background:
@@ -141,18 +118,14 @@ background-repeat: no-repeat;
     );
 
   color: white;
-
   font-weight: bold;
-
   cursor: pointer;
-
   transition: 0.3s;
 }
 
 .primary:hover{
 
   transform: translateY(-3px);
-
   box-shadow:
     0 15px 30px rgba(124,58,237,0.25);
 }
@@ -160,17 +133,11 @@ background-repeat: no-repeat;
 .secondary{
 
   border: 2px solid #dbeafe;
-
   padding: 1rem 2rem;
-
   border-radius: 14px;
-
   background: white;
-
   cursor: pointer;
-
   font-weight: bold;
-
   transition: 0.3s;
 }
 
@@ -186,13 +153,9 @@ background-repeat: no-repeat;
 .hero-right{
 
   position: relative;
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
   z-index: 2;
 }
 
@@ -203,21 +166,13 @@ background-repeat: no-repeat;
 .hero-image{
 
   width: 470px;
-
   height: 620px;
-
   object-fit: cover;
-
   object-position: center top;
-
   border-radius: 30px;
-
   position: relative;
-
   z-index: 5;
-
-  box-shadow:
-    0 20px 60px rgba(124, 58, 237, 0.35);
+  
 }
 
 /* =========================
@@ -464,4 +419,13 @@ background-repeat: no-repeat;
 
   box-shadow:
     0 12px 30px rgba(124,58,237,0.25);
+}
+
+.primary{
+
+  display: inline-block;
+
+  text-decoration: none;
+
+  text-align: center;
 }
