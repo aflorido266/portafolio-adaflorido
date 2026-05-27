@@ -1,26 +1,24 @@
 <nav class="navbar">
 
-  <div class="logo-container">
+  <div class="logo">
 
-    <div class="logo">
-      AF
-    </div>
-
-    <div class="logo-text">
-
-      <h2>
-        Ada Florido
-      </h2>
-
-      <p>
-        Frontend Developer
-      </p>
-
-    </div>
+    Ada Florido
 
   </div>
 
-  <div class="nav-links">
+  <div
+    class="menu-icon"
+    (click)="toggleMenu()"
+  >
+
+    ☰
+
+  </div>
+
+  <div
+    class="nav-links"
+    [class.active]="menuOpen"
+  >
 
     <a href="#hero">
       Inicio
@@ -30,7 +28,7 @@
       Sobre mí
     </a>
 
-    <a href="#proyects">
+    <a href="#projects">
       Proyectos
     </a>
 
@@ -44,7 +42,12 @@
 
   </div>
 
-  <a href="assets/AdaFlorido_CV_Completo.pdf" download class="cv-button">
+  <a
+    href="assets/CV-Ada-Florido.pdf"
+    class="cv-button"
+    download
+  >
     Descargar CV
   </a>
+
 </nav>

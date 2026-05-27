@@ -190,3 +190,12 @@
   box-shadow:
     0 15px 35px rgba(124,58,237,0.3);
 }
+
+@media (max-width: 768px){
+
+  .contact-container{
+
+    grid-template-columns: 1fr;
+  }
+
+}

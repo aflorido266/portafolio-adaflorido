@@ -1,14 +1,8 @@
 .navbar{
 
-  position: fixed;
+  width: 100%;
 
-  top: 20px;
-
-  left: 50%;
-
-  transform: translateX(-50%);
-
-  width: 92%;
+  padding: 1rem 1.5rem;
 
   display: flex;
 
@@ -16,82 +10,69 @@
 
   align-items: center;
 
-  padding: 1rem 2rem;
+  background: white;
 
-  background: rgba(255,255,255,0.75);
+  position: relative;
 
-  backdrop-filter: blur(12px);
-
-  border-radius: 22px;
-
-  box-shadow:
-    0 10px 30px rgba(0,0,0,0.08);
-
-  z-index: 1000;
-
-  box-sizing: border-box;
+  z-index: 999;
 }
 
-.logo-container{
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 1rem;
-}
+/* =====================
+LOGO
+===================== */
 
 .logo{
 
-  width: 55px;
-
-  height: 55px;
-
-  border-radius: 16px;
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 
   font-weight: bold;
-
-  background:
-    linear-gradient(
-      135deg,
-      #7c3aed,
-      #2563eb
-    );
-
-  color: white;
 }
 
-.logo-text h2{
+/* =====================
+MENU ICON
+===================== */
 
-  margin: 0;
+.menu-icon{
 
-  font-size: 1.2rem;
+  font-size: 2rem;
 
-  color: #111827;
+  cursor: pointer;
+
+  display: block;
 }
 
-.logo-text p{
-
-  margin: 0;
-
-  color: #6b7280;
-
-  font-size: 0.85rem;
-}
+/* =====================
+LINKS MOBILE
+===================== */
 
 .nav-links{
 
-  display: flex;
+  position: absolute;
 
-  gap: 2rem;
+  top: 100%;
+
+  left: 0;
+
+  width: 100%;
+
+  background: white;
+
+  display: none;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 1.5rem;
+
+  padding: 2rem 0;
+}
+
+/* ACTIVE */
+
+.nav-links.active{
+
+  display: flex;
 }
 
 .nav-links a{
@@ -100,44 +81,66 @@
 
   color: #111827;
 
-  font-weight: 500;
-
-  transition: 0.3s;
+  font-weight: 600;
 }
 
-.nav-links a:hover{
-
-  color: #2563eb;
-}
+/* =====================
+CV BUTTON
+===================== */
 
 .cv-button{
 
-  border: none;
-
-  padding: 0.9rem 1.5rem;
-
-  border-radius: 14px;
-
-  background:
-    linear-gradient(
-      135deg,
-      #7c3aed,
-      #2563eb
-    );
-
-  color: white;
-
-  font-weight: bold;
-
-  cursor: pointer;
-
-  transition: 0.3s;
+  display: none;
 }
 
-.cv-button:hover{
+/* =====================
+DESKTOP
+===================== */
 
-  transform: translateY(-3px);
+@media (min-width: 768px){
 
-  box-shadow:
-    0 10px 20px rgba(37,99,235,0.25);
+  .menu-icon{
+
+    display: none;
+  }
+
+  .navbar{
+
+    padding: 1.2rem 4rem;
+  }
+
+  .nav-links{
+
+    position: static;
+
+    display: flex;
+
+    flex-direction: row;
+
+    width: auto;
+
+    background: transparent;
+
+    padding: 0;
+
+    gap: 2rem;
+  }
+
+  .cv-button{
+
+    display: inline-block;
+
+    padding: 0.8rem 1.4rem;
+
+    border-radius: 14px;
+
+    background: #7c3aed;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+  }
+
 }

@@ -1,104 +1,138 @@
-<<section id = "hero" class="hero">
+<section
+  id="hero"
+  class="hero"
+>
 
-  <div class="hero-left">
+  <div class="hero-container">
 
-    <div class="badge">
-      &lt;/&gt; Frontend Developer
-    </div>
+    <!-- =====================
+         LEFT CONTENT
+    ====================== -->
 
-    <h1>
+    <div class="hero-text">
 
-      Hola, soy
+      <!-- BADGE -->
 
-      <span>
-        Ada Florido
+      <span class="hero-badge">
+
+        <i class="fas fa-code"></i>
+
+        Frontend Developer
+
       </span>
 
-    </h1>
+      <!-- TITLE -->
 
-    <p>
+      <h1>
 
-      Desarrollo interfaces web modernas,
-      accesibles y responsives
-      con tecnologías actuales.
+        Hola, soy
 
-    </p>
+        <span>
+          Ada Florido
+        </span>
 
-    <div class="hero-buttons">
+      </h1>
 
-      <a href="https://github.com/aflorido266" target="_blank" class="primary">
-        Ver mis proyectos
-      </a>
+      <!-- DESCRIPTION -->
 
-      <a href="#contact" class="secondary">
-        Contactar conmigo
-      </a>
-    </div>
+      <p>
 
-  </div>
+        Desarrollo interfaces web modernas,
+        accesibles y performantes con
+        tecnologías actuales.
 
-  <div class="hero-right">
+      </p>
 
-    <div class="glow"></div>
-    <div class="circle-bg"></div>
-    <div class="circle-ring"></div>
-    <div class="tech-dots"></div>
+      <!-- BUTTONS -->
 
-    <img src="assets/images/AF.png" alt="Ada Florido" class="hero-image">
+      <div class="hero-buttons">
 
-    <div class="code-card">
+        <a href="#projects">
 
-      <div class="code-header">
+          <button class="primary">
 
-        <span class="dot red"></span>
+            Ver mis proyectos
 
-        <span class="dot yellow"></span>
+          </button>
 
-        <span class="dot green"></span>
+        </a>
+
+        <a href="#contact">
+
+          <button class="secondary">
+
+            Contactar conmigo
+
+          </button>
+
+        </a>
 
       </div>
 
-      <pre>
-<span class="blue">import</span> &#123; Component &#125; <span class="blue">from</span> <span class="orange">'@angular/core'</span>;
+      <!-- SOCIAL LINKS -->
 
-<span class="blue">@Component</span>(&#123;
-  selector: <span class="orange">'app-hero'</span>,
-  standalone: <span class="purple">true</span>,
+      <div class="social-links">
+
+        <a
+          href="https://github.com/aflorido266"
+          target="_blank"
+        >
+
+          <i class="fab fa-github"></i>
+
+        </a>
+
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+        >
+
+          <i class="fab fa-linkedin"></i>
+
+        </a>
+
+        <a
+          href="mailto:tuemail@gmail.com"
+        >
+
+          <i class="fas fa-envelope"></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- =====================
+         RIGHT CONTENT
+    ====================== -->
+
+    <div class="hero-image">
+
+      <!-- IMAGE -->
+
+      <img
+        src="assets/images/AF.png"
+        alt="Ada Florido"
+      >
+
+      <!-- CODE CARD -->
+
+      <div class="code-card">
+
+<pre><code>
+import &#123; Component &#125; from '@angular/core';
+
+&#64;Component(&#123;
+  selector: 'app-hero',
+  standalone: true,
 &#125;)
+</code></pre>
 
-<span class="blue">export class</span> HeroComponent &#123;
-
-  title = <span class="orange">'Hola, soy Ada Florido'</span>;
-
-  stack = [
-    <span class="orange">'Angular'</span>,
-    <span class="orange">'TypeScript'</span>,
-    <span class="orange">'Tailwind CSS'</span>
-  ];
-
-&#125;
-</pre>
+      </div>
 
     </div>
 
   </div>
-  <div class="socials">
 
-    <span>Sígueme en</span>
-
-    <a href="https://github.com/aflorido266">
-      <i class="fab fa-github"></i>
-    </a>
-
-    <a href="https://www.linkedin.com/in/florido-ada-506a9769/">
-      <i class="fab fa-linkedin"></i>
-    </a>
-
-    <a href="mailto:aflorido266@gmail.com">
-      
-      <i class="fas fa-envelope"></i>
-    </a>
-
-  </div>
-
-  </section>
+</section>
