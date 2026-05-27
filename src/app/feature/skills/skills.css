@@ -1,28 +1,59 @@
+/* =========================
+   SKILLS SECTION
+========================= */
+
 .skills-section{
 
-  padding: 4rem 6rem;
+  padding: 4rem 1rem;
 
   background:
     linear-gradient(
       180deg,
-      #f8f7ff 0%,
+      #f8fafc 0%,
       #eef2ff 100%
     );
 }
 
 /* =========================
-   TITLE
+   HEADER
 ========================= */
 
-.skills-title{
+.skills-header{
 
-  color: #4338ca;
+  text-align: center;
 
-  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+.skills-tag{
+
+  color: #7c3aed;
+
+  font-size: 0.9rem;
 
   font-weight: 700;
 
-  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.skills-header h2{
+
+  font-size: 2.5rem;
+
+  color: #0f172a;
+
+  margin: 1rem 0;
+}
+
+.skills-header p{
+
+  color: #475569;
+
+  line-height: 1.8;
+
+  max-width: 600px;
+
+  margin: auto;
 }
 
 /* =========================
@@ -34,7 +65,7 @@
   display: grid;
 
   grid-template-columns:
-    repeat(10, 1fr);
+    repeat(2, 1fr);
 
   gap: 1rem;
 }
@@ -43,14 +74,14 @@
    CARD
 ========================= */
 
-.tech-card{
+.skill-card{
 
   background:
-    rgba(255,255,255,0.75);
+    rgba(255,255,255,0.8);
 
   backdrop-filter: blur(12px);
 
-  border-radius: 20px;
+  border-radius: 24px;
 
   padding: 1.5rem 1rem;
 
@@ -62,42 +93,39 @@
 
   justify-content: center;
 
-  gap: 0.8rem;
+  gap: 1rem;
 
   box-shadow:
-    0 10px 25px rgba(0,0,0,0.08);
+    0 10px 30px rgba(0,0,0,0.05);
 
   transition: 0.3s;
 }
 
-.tech-card:hover{
+.skill-card:hover{
 
   transform: translateY(-8px);
 
   box-shadow:
-    0 20px 40px rgba(124,58,237,0.18);
+    0 20px 40px rgba(124,58,237,0.15);
 }
 
 /* =========================
-   ICONS
+   ICON
 ========================= */
 
-.tech-card i{
+.skill-card i{
 
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 
-/* =========================
-   ICON COLORS
-========================= */
+/* COLORS */
 
 .fa-angular{
 
   color: #dd0031;
 }
 
-.fa-js,
-.fa-js-square{
+.fa-js{
 
   color: #facc15;
 }
@@ -110,11 +138,6 @@
 .fa-css3-alt{
 
   color: #2563eb;
-}
-
-.fa-wind{
-
-  color: #06b6d4;
 }
 
 .fa-git-alt{
@@ -137,13 +160,18 @@
   color: #f59e0b;
 }
 
+.fa-wind{
+
+  color: #06b6d4;
+}
+
 /* =========================
    TEXT
 ========================= */
 
-.tech-card span{
+.skill-card span{
 
-  font-size: 0.9rem;
+  font-size: 1rem;
 
   font-weight: 600;
 
@@ -152,12 +180,28 @@
   text-align: center;
 }
 
-@media (max-width: 768px){
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 992px){
+
+  .skills-section{
+
+    padding: 6rem 4rem;
+  }
+
+  .skills-header h2{
+
+    font-size: 3.5rem;
+  }
 
   .skills-grid{
 
     grid-template-columns:
-      repeat(2, 1fr);
+      repeat(5, 1fr);
+
+    gap: 1.5rem;
   }
 
 }
