@@ -1,0 +1,211 @@
+.about-section{
+
+  padding: 4rem 6rem 2rem;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8f7ff 0%,
+      #eef2ff 100%
+    );
+}
+
+.about-container{
+
+  max-width: 1300px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 4rem;
+
+  align-items: center;
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+.about-texto{
+
+  max-width: 550px;
+}
+
+.about-tag{
+
+  display: inline-block;
+
+  color: #7c3aed;
+
+  font-size: 0.9rem;
+
+  font-weight: bold;
+
+  margin-bottom: 1rem;
+}
+
+.about-texto h2{
+
+  font-size: 3.2rem;
+
+  line-height: 1.2;
+
+  color: #0f172a;
+
+  margin-bottom: 1.5rem;
+}
+
+.about-texto p{
+
+  font-size: 1.05rem;
+
+  line-height: 1.9;
+
+  color: #475569;
+
+  margin-bottom: 1.3rem;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.about-buttons{
+
+  display: flex;
+
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.about-cards{
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1.5rem;
+}
+
+.info-card{
+
+  background: rgba(255,255,255,0.75);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 24px;
+
+  padding: 2rem;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+  transition: 0.3s;
+}
+
+.info-card:hover{
+
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 20px 40px rgba(124,58,237,0.18);
+}
+
+/* =========================
+   ICONOS
+========================= */
+
+.icon{
+
+  width: 70px;
+
+  height: 70px;
+
+  border-radius: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 2rem;
+
+  color: white;
+
+  flex-shrink: 0;
+}
+
+.purple{
+
+  background:
+    linear-gradient(
+      135deg,
+      #7c3aed,
+      #9333ea
+    );
+}
+
+.blue{
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #3b82f6
+    );
+}
+
+.green{
+
+  background:
+    linear-gradient(
+      135deg,
+      #10b981,
+      #14b8a6
+    );
+}
+
+.orange{
+
+  background:
+    linear-gradient(
+      135deg,
+      #f97316,
+      #ef4444
+    );
+}
+
+/* =========================
+   TEXTO CARD
+========================= */
+
+.info-card h3{
+
+  font-size: 2rem;
+
+  color: #0f172a;
+
+  margin-bottom: 0.3rem;
+}
+
+.info-card p{
+
+  color: #475569;
+
+  line-height: 1.5;
+}
