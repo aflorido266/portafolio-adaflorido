@@ -1,0 +1,153 @@
+.skills-section{
+
+  padding: 4rem 6rem;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8f7ff 0%,
+      #eef2ff 100%
+    );
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.skills-title{
+
+  color: #4338ca;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  margin-bottom: 2rem;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.skills-grid{
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(10, 1fr);
+
+  gap: 1rem;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.tech-card{
+
+  background:
+    rgba(255,255,255,0.75);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 20px;
+
+  padding: 1.5rem 1rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 0.8rem;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
+  transition: 0.3s;
+}
+
+.tech-card:hover{
+
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 20px 40px rgba(124,58,237,0.18);
+}
+
+/* =========================
+   ICONS
+========================= */
+
+.tech-card i{
+
+  font-size: 2.2rem;
+}
+
+/* =========================
+   ICON COLORS
+========================= */
+
+.fa-angular{
+
+  color: #dd0031;
+}
+
+.fa-js,
+.fa-js-square{
+
+  color: #facc15;
+}
+
+.fa-html5{
+
+  color: #f97316;
+}
+
+.fa-css3-alt{
+
+  color: #2563eb;
+}
+
+.fa-wind{
+
+  color: #06b6d4;
+}
+
+.fa-git-alt{
+
+  color: #f97316;
+}
+
+.fa-github{
+
+  color: #111827;
+}
+
+.fa-figma{
+
+  color: #ec4899;
+}
+
+.fa-fire{
+
+  color: #f59e0b;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.tech-card span{
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  color: #0f172a;
+
+  text-align: center;
+}
