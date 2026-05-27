@@ -1,12 +1,16 @@
+/* =========================
+   CONTACT SECTION
+========================= */
+
 .contact-section{
 
-  padding: 6rem;
+  padding: 4rem 1rem;
 
   background:
     linear-gradient(
       180deg,
       #eef2ff 0%,
-      #f8f7ff 100%
+      #f8fafc 100%
     );
 }
 
@@ -16,35 +20,44 @@
 
 .contact-container{
 
-  max-width: 1300px;
+  width: 100%;
 
-  margin: auto;
+  max-width: 1200px;
+
+  margin: 0 auto;
 
   display: grid;
 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 
-  gap: 4rem;
+  gap: 3rem;
 
   align-items: center;
 }
 
 /* =========================
-   LEFT
+   LEFT CONTENT
 ========================= */
+
+.contact-info{
+
+  text-align: center;
+}
 
 .contact-tag{
 
   color: #7c3aed;
 
-  font-weight: bold;
-
   font-size: 0.9rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
 }
 
 .contact-info h2{
 
-  font-size: 3rem;
+  font-size: 2.5rem;
 
   color: #0f172a;
 
@@ -75,21 +88,23 @@
 
 .contact-item{
 
+  background:
+    rgba(255,255,255,0.8);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 20px;
+
+  padding: 1rem 1.5rem;
+
   display: flex;
 
   align-items: center;
 
   gap: 1rem;
 
-  background:
-    rgba(255,255,255,0.7);
-
-  padding: 1rem 1.2rem;
-
-  border-radius: 18px;
-
   box-shadow:
-    0 10px 25px rgba(0,0,0,0.06);
+    0 10px 30px rgba(0,0,0,0.05);
 }
 
 .contact-item i{
@@ -99,6 +114,15 @@
   color: #7c3aed;
 }
 
+.contact-item span{
+
+  color: #0f172a;
+
+  font-weight: 500;
+
+  word-break: break-word;
+}
+
 /* =========================
    FORM
 ========================= */
@@ -106,27 +130,25 @@
 .contact-form{
 
   background:
-    rgba(255,255,255,0.75);
+    rgba(255,255,255,0.8);
 
   backdrop-filter: blur(12px);
 
-  padding: 2.5rem;
-
   border-radius: 30px;
 
-  box-shadow:
-    0 15px 40px rgba(0,0,0,0.08);
+  padding: 2rem;
 
   display: flex;
 
   flex-direction: column;
 
   gap: 1.5rem;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.05);
 }
 
-/* =========================
-   INPUTS
-========================= */
+/* INPUTS */
 
 .contact-form input,
 .contact-form textarea{
@@ -139,13 +161,13 @@
 
   padding: 1rem 1.2rem;
 
-  border-radius: 16px;
+  border-radius: 18px;
 
   background: #f8fafc;
 
-  font-size: 1rem;
-
   color: #0f172a;
+
+  font-size: 1rem;
 }
 
 .contact-form textarea{
@@ -153,9 +175,7 @@
   resize: none;
 }
 
-/* =========================
-   BUTTON
-========================= */
+/* BUTTON */
 
 .contact-form button{
 
@@ -167,7 +187,7 @@
 
   background:
     linear-gradient(
-      90deg,
+      135deg,
       #7c3aed,
       #2563eb
     );
@@ -188,14 +208,35 @@
   transform: translateY(-4px);
 
   box-shadow:
-    0 15px 35px rgba(124,58,237,0.3);
+    0 15px 35px rgba(124,58,237,0.25);
 }
 
-@media (max-width: 768px){
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 992px){
+
+  .contact-section{
+
+    padding: 6rem 4rem;
+  }
 
   .contact-container{
 
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 4rem;
+  }
+
+  .contact-info{
+
+    text-align: left;
+  }
+
+  .contact-info h2{
+
+    font-size: 3.5rem;
   }
 
 }
