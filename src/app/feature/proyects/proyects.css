@@ -2,81 +2,55 @@
    PROJECTS SECTION
 ========================= */
 
-.projects-section{
-
+.projects-section {
   padding: 4rem 1rem;
-
-  background:
-    linear-gradient(
-      180deg,
-      #eef2ff 0%,
-      #f8fafc 100%
-    );
+  background: linear-gradient(180deg, var(--bg-subtle) 0%, var(--bg-main) 100%);
 }
 
 /* =========================
    HEADER
 ========================= */
 
-.projects-header{
-
+.projects-header {
   display: flex;
-
   flex-direction: column;
-
   gap: 1rem;
-
   margin-bottom: 3rem;
-
   text-align: center;
 }
 
-.projects-tag{
-
-  color: #7c3aed;
-
+.projects-tag {
+  color: var(--purple-primary);
   font-weight: 700;
-
   font-size: 0.9rem;
-
   text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
-.projects-header h2{
-
+.projects-header h2 {
   font-size: 2.5rem;
-
-  color: #0f172a;
-
+  color: var(--text-dark);
   line-height: 1.2;
 }
 
-.projects-link{
-
+.projects-link {
   text-decoration: none;
-
-  color: #7c3aed;
-
+  color: var(--purple-primary);
   font-weight: bold;
-
   transition: 0.3s;
 }
 
-.projects-link:hover{
-
-  color: #5b21b6;
+.projects-link:hover {
+  color: var(--purple-deep);
 }
 
 /* =========================
    GRID
 ========================= */
 
-.projects-grid{
-
+.projects-grid {
   display: grid;
-
   grid-template-columns: 1fr;
-
   gap: 2rem;
 }
 
@@ -84,39 +58,29 @@
    CARD
 ========================= */
 
-.project-card{
-
-  background:
-    rgba(255,255,255,0.8);
-
+.project-card {
+  background: var(--bg-card);
   backdrop-filter: blur(12px);
-
   border-radius: 28px;
-
   overflow: hidden;
-
-  box-shadow:
-    0 10px 30px rgba(0,0,0,0.06);
-
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--purple-soft);
   transition: 0.3s;
 }
 
-.project-card:hover{
-
+.project-card:hover {
   transform: translateY(-8px);
-
-  box-shadow:
-    0 20px 40px rgba(124,58,237,0.15);
+  box-shadow: 0 20px 40px var(--purple-glow);
+  border-color: var(--purple-light);
 }
 
-/* IMAGE */
+/* =========================
+   IMAGE
+========================= */
 
-.project-card img{
-
+.project-card img {
   width: 100%;
-
   height: 220px;
-
   object-fit: cover;
 }
 
@@ -124,26 +88,19 @@
    CONTENT
 ========================= */
 
-.project-content{
-
+.project-content {
   padding: 1.5rem;
 }
 
-.project-content h3{
-
+.project-content h3 {
   font-size: 1.5rem;
-
-  color: #0f172a;
-
+  color: var(--text-dark);
   margin-bottom: 1rem;
 }
 
-.project-content p{
-
-  color: #475569;
-
+.project-content p {
+  color: var(--text-medium);
   line-height: 1.7;
-
   margin-bottom: 1.5rem;
 }
 
@@ -151,98 +108,73 @@
    TECH STACK
 ========================= */
 
-.tech-stack{
-
+.tech-stack {
   display: flex;
-
   flex-wrap: wrap;
-
   gap: 0.7rem;
-
   margin-bottom: 1.5rem;
 }
 
-.tech-stack span{
-
+.tech-stack span {
   padding: 0.5rem 1rem;
-
   border-radius: 999px;
-
-  background: #eef2ff;
-
-  color: #4338ca;
-
+  background: var(--purple-soft);
+  color: var(--purple-deep);
   font-size: 0.85rem;
-
   font-weight: 600;
+  transition: 0.3s;
+}
+
+.tech-stack span:hover {
+  background: var(--purple-primary);
+  color: white;
 }
 
 /* =========================
    LINKS
 ========================= */
 
-.project-links{
-
+.project-links {
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
 }
 
-.project-links a{
-
+.project-links a {
   display: flex;
-
   align-items: center;
-
   gap: 0.5rem;
-
   text-decoration: none;
-
-  color: #0f172a;
-
+  color: var(--text-dark);
   font-weight: 600;
-
   transition: 0.3s;
 }
 
-.project-links a:hover{
-
-  color: #7c3aed;
+.project-links a:hover {
+  color: var(--purple-primary);
 }
 
 /* =========================
    DESKTOP
 ========================= */
 
-@media (min-width: 992px){
-
-  .projects-section{
-
+@media (min-width: 992px) {
+  .projects-section {
     padding: 6rem 4rem;
   }
 
-  .projects-header{
-
+  .projects-header {
     flex-direction: row;
-
     justify-content: space-between;
-
     align-items: center;
-
     text-align: left;
   }
 
-  .projects-header h2{
-
+  .projects-header h2 {
     font-size: 3.5rem;
   }
 
-  .projects-grid{
-
-    grid-template-columns:
-      repeat(3, 1fr);
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
-
 }

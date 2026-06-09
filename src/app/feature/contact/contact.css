@@ -2,36 +2,22 @@
    CONTACT SECTION
 ========================= */
 
-.contact-section{
-
+.contact-section {
   padding: 4rem 1rem;
-
-  background:
-    linear-gradient(
-      180deg,
-      #eef2ff 0%,
-      #f8fafc 100%
-    );
+  background: linear-gradient(180deg, var(--bg-subtle) 0%, var(--bg-main) 100%);
 }
 
 /* =========================
    CONTAINER
 ========================= */
 
-.contact-container{
-
+.contact-container {
   width: 100%;
-
   max-width: 1200px;
-
   margin: 0 auto;
-
   display: grid;
-
   grid-template-columns: 1fr;
-
   gap: 3rem;
-
   align-items: center;
 }
 
@@ -39,37 +25,27 @@
    LEFT CONTENT
 ========================= */
 
-.contact-info{
-
+.contact-info {
   text-align: center;
 }
 
-.contact-tag{
-
-  color: #7c3aed;
-
+.contact-tag {
+  color: var(--purple-primary);
   font-size: 0.9rem;
-
   font-weight: 700;
-
   text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
-.contact-info h2{
-
+.contact-info h2 {
   font-size: 2.5rem;
-
-  color: #0f172a;
-
+  color: var(--text-dark);
   margin: 1rem 0;
 }
 
-.contact-info p{
-
-  color: #475569;
-
+.contact-info p {
+  color: var(--text-medium);
   line-height: 1.8;
-
   margin-bottom: 2rem;
 }
 
@@ -77,49 +53,39 @@
    CONTACT ITEMS
 ========================= */
 
-.contact-items{
-
+.contact-items {
   display: flex;
-
   flex-direction: column;
-
   gap: 1rem;
 }
 
-.contact-item{
-
-  background:
-    rgba(255,255,255,0.8);
-
+.contact-item {
+  background: var(--bg-card);
   backdrop-filter: blur(12px);
-
   border-radius: 20px;
-
   padding: 1rem 1.5rem;
-
   display: flex;
-
   align-items: center;
-
   gap: 1rem;
-
-  box-shadow:
-    0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--purple-soft);
+  transition: 0.3s;
 }
 
-.contact-item i{
+.contact-item:hover {
+  border-color: var(--purple-light);
+  box-shadow: 0 10px 30px var(--purple-glow);
+  transform: translateY(-2px);
+}
 
+.contact-item i {
   font-size: 1.3rem;
-
-  color: #7c3aed;
+  color: var(--purple-primary);
 }
 
-.contact-item span{
-
-  color: #0f172a;
-
+.contact-item span {
+  color: var(--text-dark);
   font-weight: 500;
-
   word-break: break-word;
 }
 
@@ -127,116 +93,86 @@
    FORM
 ========================= */
 
-.contact-form{
-
-  background:
-    rgba(255,255,255,0.8);
-
+.contact-form {
+  background: var(--bg-card);
   backdrop-filter: blur(12px);
-
   border-radius: 30px;
-
   padding: 2rem;
-
   display: flex;
-
   flex-direction: column;
-
   gap: 1.5rem;
-
-  box-shadow:
-    0 15px 40px rgba(0,0,0,0.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--purple-soft);
 }
 
-/* INPUTS */
+/* =========================
+   INPUTS
+========================= */
 
 .contact-form input,
-.contact-form textarea{
-
+.contact-form textarea {
   width: 100%;
-
-  border: none;
-
+  border: 1.5px solid var(--purple-soft);
   outline: none;
-
   padding: 1rem 1.2rem;
-
   border-radius: 18px;
-
-  background: #f8fafc;
-
-  color: #0f172a;
-
+  background: var(--bg-subtle);
+  color: var(--text-dark);
   font-size: 1rem;
-}
-
-.contact-form textarea{
-
-  resize: none;
-}
-
-/* BUTTON */
-
-.contact-form button{
-
-  border: none;
-
-  padding: 1rem;
-
-  border-radius: 18px;
-
-  background:
-    linear-gradient(
-      135deg,
-      #7c3aed,
-      #2563eb
-    );
-
-  color: white;
-
-  font-weight: bold;
-
-  font-size: 1rem;
-
-  cursor: pointer;
-
   transition: 0.3s;
 }
 
-.contact-form button:hover{
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--purple-light);
+  box-shadow: 0 0 0 3px var(--purple-glow);
+}
 
+.contact-form textarea {
+  resize: none;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.contact-form button {
+  border: none;
+  padding: 1rem;
+  border-radius: 18px;
+  background: var(--gradient-primary);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px var(--purple-glow);
+}
+
+.contact-form button:hover {
   transform: translateY(-4px);
-
-  box-shadow:
-    0 15px 35px rgba(124,58,237,0.25);
+  box-shadow: 0 15px 35px var(--purple-glow);
 }
 
 /* =========================
    DESKTOP
 ========================= */
 
-@media (min-width: 992px){
-
-  .contact-section{
-
+@media (min-width: 992px) {
+  .contact-section {
     padding: 6rem 4rem;
   }
 
-  .contact-container{
-
+  .contact-container {
     grid-template-columns: 1fr 1fr;
-
     gap: 4rem;
   }
 
-  .contact-info{
-
+  .contact-info {
     text-align: left;
   }
 
-  .contact-info h2{
-
+  .contact-info h2 {
     font-size: 3.5rem;
   }
-
 }

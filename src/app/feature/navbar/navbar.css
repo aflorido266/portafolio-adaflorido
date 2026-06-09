@@ -1,146 +1,119 @@
-.navbar{
+/* =========================
+   NAVBAR
+========================= */
 
+.navbar {
   width: 100%;
-
   padding: 1rem 1.5rem;
-
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
-
-  background: white;
-
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--purple-soft);
   position: relative;
-
   z-index: 999;
 }
 
-/* =====================
-LOGO
-===================== */
+/* =========================
+   LOGO
+========================= */
 
-.logo{
 
-  font-size: 1.4rem;
+/* =========================
+   MENU ICON
+========================= */
 
-  font-weight: bold;
-}
-
-/* =====================
-MENU ICON
-===================== */
-
-.menu-icon{
-
+.menu-icon {
   font-size: 2rem;
-
   cursor: pointer;
-
   display: block;
+  color: var(--purple-primary);
 }
 
-/* =====================
-LINKS MOBILE
-===================== */
+/* =========================
+   LINKS MOBILE
+========================= */
 
-.nav-links{
-
+.nav-links {
   position: absolute;
-
   top: 100%;
-
   left: 0;
-
   width: 100%;
-
-  background: white;
-
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
   display: none;
-
   flex-direction: column;
-
   align-items: center;
-
   gap: 1.5rem;
-
   padding: 2rem 0;
+  border-bottom: 1px solid var(--purple-soft);
 }
 
 /* ACTIVE */
 
-.nav-links.active{
-
+.nav-links.active {
   display: flex;
 }
 
-.nav-links a{
-
+.nav-links a {
   text-decoration: none;
-
-  color: #111827;
-
+  color: var(--text-dark);
   font-weight: 600;
+  transition: color 0.3s;
 }
 
-/* =====================
-CV BUTTON
-===================== */
+.nav-links a:hover {
+  color: var(--purple-primary);
+}
 
-.cv-button{
+/* =========================
+   CV BUTTON
+========================= */
 
+.cv-button {
   display: none;
 }
 
-/* =====================
-DESKTOP
-===================== */
+/* =========================
+   DESKTOP
+========================= */
 
-@media (min-width: 768px){
-
-  .menu-icon{
-
+@media (min-width: 768px) {
+  .menu-icon {
     display: none;
   }
 
-  .navbar{
-
+  .navbar {
     padding: 1.2rem 4rem;
   }
 
-  .nav-links{
-
+  .nav-links {
     position: static;
-
     display: flex;
-
     flex-direction: row;
-
     width: auto;
-
     background: transparent;
-
+    backdrop-filter: none;
     padding: 0;
-
     gap: 2rem;
+    border: none;
   }
 
-  .cv-button{
-
+  .cv-button {
     display: inline-block;
-
     padding: 0.8rem 1.4rem;
-
     border-radius: 14px;
-
-    background: #7c3aed;
-
+    background: var(--gradient-primary);
     color: white;
-
     text-decoration: none;
-
     font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px var(--purple-glow);
   }
 
+  .cv-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px var(--purple-glow);
+  }
 }
